@@ -654,14 +654,14 @@ void smithyCard(int currentPlayer, struct gameState *state, int handPos)
 	}
 
 	//discard card from hand
-	discardCard(handPos, currentPlayer, state, 0);
+	discardCard(handPos, currentPlayer, state, 1);
 }
 
 void adventurerCard(int currentPlayer, int temphand[], int z, struct gameState *state)
 {
 	int cardDrawn;
 	int drawntreasure = 0;
-	while (drawntreasure<2) {
+	while (drawntreasure<=2) {
 		if (state->deckCount[currentPlayer] <1) {//if the deck is empty we need to shuffle discard and add to deck
 			shuffle(currentPlayer, state);
 		}
@@ -691,8 +691,6 @@ void council_roomCard(int currentPlayer, int handPos, struct gameState *state)
 		drawCard(currentPlayer, state);
 	}
 
-	//+1 Buy
-	state->numBuys++;
 
 	//Each other player draws a card
 	for (i = 0; i < state->numPlayers; i++)
@@ -719,7 +717,7 @@ void villageCard(int currentPlayer, int handPos, struct gameState *state)
 	discardCard(handPos, currentPlayer, state, 0);
 }
 
-void stewardCard(int currentPlayer, int choice1, int choice2, int choice3, int handPos, struct gameState *state)
+void stewardCard(int currentPlayer, int choice2, int choice1, int choice3, int handPos, struct gameState *state)
 {
 	if (choice1 == 1)
 	{
