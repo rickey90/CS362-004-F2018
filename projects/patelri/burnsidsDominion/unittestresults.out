@@ -1,0 +1,172 @@
+Result for running Dominion tests:
+cardtest1.c:
+TESTING Smithy Card
+
+Test case: Hand count after drawing 3 cards
+Count before = 4,  Count after = 8
+FAIL
+
+Test case: Deck count of player after drawing 3 cards
+Count before = 5,  Count after = 1
+FAIL
+
+Test case: Smithy card has been removed from hand
+Card at pos 4 before = 13,  Card at pos 4 after = 4
+PASS
+
+Test case: Played card count after playing smithy
+Count before = 1,  Count after = 1
+FAIL
+
+Test case: Smithy has been added to played cards pile
+Last card in played pile before smithy = 4,  After = 387389207
+FAIL
+
+Test case: Supply of kingdom and victory cards have not changed
+Supply count for 0 card before = 10, after = 10 - PASS
+Supply count for 1 card before = 10, after = 10 - PASS
+Supply count for 2 card before = 10, after = 10 - PASS
+Supply count for 3 card before = 8, after = 8 - PASS
+Supply count for 4 card before = 10, after = 10 - PASS
+Supply count for 5 card before = 10, after = 10 - PASS
+Supply count for 6 card before = 10, after = 10 - PASS
+Supply count for 7 card before = 10, after = 10 - PASS
+Supply count for 8 card before = 10, after = 10 - PASS
+Supply count for 9 card before = 8, after = 8 - PASS
+
+Test case: Other players state remain the same as before playing card
+Hand count of player 1 before = 0, after = 0 - PASS
+Deck count of plater 1 before = 10, after = 10 - PASS
+
+FAILED TEST CASES: 4
+File 'dominion.c'
+Lines executed:20.57% of 559
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+TESTING Adventurer Card
+
+Test case: Hand count after gaining 2 treasure cards.
+Count before = 5,  Count after = 6
+FAIL
+
+Test case: Gained cards are treasure cards
+PASS
+
+Test case: Deck count went down by atleast 2
+Count before = 5,  Count after = 2
+PASS
+
+Test case: Discard count went up by atleast 2
+Count before = 0,  Count after = 2
+PASS
+
+Test case: Played cards count went up by one
+Count before = 0,  Count after = 0
+FAIL
+
+Test case: Supply of kingdom and victory cards have not changed
+Supply count for 0 card before = 10, after = 10 - PASS
+Supply count for 1 card before = 10, after = 10 - PASS
+Supply count for 2 card before = 10, after = 10 - PASS
+Supply count for 3 card before = 8, after = 8 - PASS
+Supply count for 4 card before = 10, after = 10 - PASS
+Supply count for 5 card before = 10, after = 10 - PASS
+Supply count for 6 card before = 10, after = 10 - PASS
+Supply count for 7 card before = 10, after = 10 - PASS
+Supply count for 8 card before = 10, after = 10 - PASS
+Supply count for 9 card before = 8, after = 8 - PASS
+
+Test case: Other players state remain the same as before playing card
+Hand count of player 1 before = 0, after = 0 - PASS
+Deck count of plater 1 before = 10, after = 10 - PASS
+
+FAILED TEST CASES: 2
+File 'dominion.c'
+Lines executed:23.79% of 559
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+TESTING Village Card
+
+Test case: Hand count after playing card.
+Count before = 4,  Count after = 5
+PASS
+
+Test case: Number of actions added
+Count before = 0,  Count after = 2
+PASS
+
+Test case: Village card removed from hand
+Card as pos 4 before = 14, Card as pos 4 after = 4
+PASS
+
+Test case: Played cards count went up by one
+Count before = 0,  Count after = 1
+PASS
+
+Test case: Supply of kingdom and victory cards have not changed
+Supply count for 0 card before = 10, after = 10 - PASS
+Supply count for 1 card before = 10, after = 10 - PASS
+Supply count for 2 card before = 10, after = 10 - PASS
+Supply count for 3 card before = 8, after = 8 - PASS
+Supply count for 4 card before = 10, after = 10 - PASS
+Supply count for 5 card before = 10, after = 10 - PASS
+Supply count for 6 card before = 10, after = 10 - PASS
+Supply count for 7 card before = 10, after = 10 - PASS
+Supply count for 8 card before = 10, after = 10 - PASS
+Supply count for 9 card before = 8, after = 8 - PASS
+
+Test case: Other players state remain the same as before playing card
+Hand count of player 1 before = 0, after = 0 - PASS
+Deck count of plater 1 before = 10, after = 10 - PASS
+
+ALL TEST CASES PASSED!
+File 'dominion.c'
+Lines executed:24.51% of 559
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+TESTING Council Room Card
+
+Test case: Hand count after playing card(+4).
+Count before = 4,  Count after = 8
+PASS
+
+Test case: Number of buys added
+Count before = 0,  Count after = 1
+PASS
+
+Test case: Hand and Deck count of all players
+Player 1: Hand count before = 0, after = 1 - PASS
+Deck count of player 1 before = 10, after = 9 - PASS
+Player 2: Hand count before = 0, after = 1 - PASS
+Deck count of player 2 before = 10, after = 9 - PASS
+Player 3: Hand count before = 0, after = 1 - PASS
+Deck count of player 3 before = 10, after = 9 - PASS
+
+Test case: Council room card removed from hand
+Card as pos 4 before = 8, Card as pos 4 after = 1
+PASS
+
+Test case: Played cards count went up by one
+Count before = 0,  Count after = 1
+PASS
+
+Test case: Supply of kingdom and victory cards have not changed
+Supply count for 0 card before = 10, after = 10 - PASS
+Supply count for 1 card before = 10, after = 10 - PASS
+Supply count for 2 card before = 10, after = 10 - PASS
+Supply count for 3 card before = 12, after = 12 - PASS
+Supply count for 4 card before = 10, after = 10 - PASS
+Supply count for 5 card before = 10, after = 10 - PASS
+Supply count for 6 card before = 10, after = 10 - PASS
+Supply count for 7 card before = 10, after = 10 - PASS
+Supply count for 8 card before = 10, after = 10 - PASS
+Supply count for 9 card before = 12, after = 12 - PASS
+
+ALL TEST CASES PASSED!
+File 'dominion.c'
+Lines executed:27.01% of 559
+Creating 'dominion.c.gcov'
+
